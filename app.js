@@ -64,3 +64,23 @@ window.addEventListener("scroll", () => {
   });
 });
 //---------------------------------------------------------
+// scroll to top button
+let scrlToTopBtn = document.querySelector("div.scroll-to-top");
+
+window.addEventListener("scroll", () => {
+  if (pageYOffset >= 350) {
+    scrlToTopBtn.classList.add("active");
+  } else {
+    scrlToTopBtn.classList.remove("active");
+  }
+});
+
+scrlToTopBtn.addEventListener("click", () => {
+  window.scroll(0, 0);
+});
+
+window.addEventListener("load", () => {
+  scrlToTopBtn.classList.remove("active");
+});
+
+//---------------------------------------------------------

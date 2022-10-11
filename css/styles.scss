@@ -63,12 +63,38 @@ body {
 }
 //Global styles
 
+// scroll-to-top button
+.scroll-to-top {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 55;
+  cursor: pointer;
+
+  i {
+    color: #fff;
+    background-color: #0563bb;
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+.scroll-to-top.active {
+  display: block;
+  opacity: 1;
+}
+// scroll-to-top button
+
 // mobile nav button
 .mobile-nav-button {
   display: none;
   position: fixed;
   top: 15px;
-  right: 35px;
+  right: 20px;
   color: white;
   background-color: $mainColor;
   width: 57px;
@@ -402,7 +428,7 @@ body {
       background-color: #ffffffb3;
       z-index: 2;
       opacity: 0;
-      transition: all ease-in-out 0.3s;
+      transition: all ease-in-out 0.2s;
       -webkit-transition: all ease-in-out 0.3s;
       -moz-transition: all ease-in-out 0.3s;
       -ms-transition: all ease-in-out 0.3s;
@@ -417,10 +443,12 @@ body {
     right: 0;
     bottom: 0;
     color: #000;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    text-align: center;
     z-index: 3;
     opacity: 0;
 
@@ -433,6 +461,14 @@ body {
   .portfolio-wrap:hover::before,
   .portfolio-wrap:hover .portfolio-info {
     opacity: 1;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .portfolio-info {
+    p {
+      font-size: 14px;
+    }
   }
 }
 // End portfolio-section
