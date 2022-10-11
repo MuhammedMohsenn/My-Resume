@@ -482,13 +482,28 @@
               <div class="row">
                 <form action="contact-form-handler.php" method="post">
                   <label for="name">Name</label>
-                  <input type="text" id="name" placeholder="Your Name" />
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                  />
 
                   <label for="email">Email</label>
-                  <input type="email" id="email" placeholder="Your Email" />
+                  <input
+                    type="email"
+                    id="email"
+                    name="mail"
+                    placeholder="Your Email"
+                  />
 
                   <label for="phone">Phone</label>
-                  <input type="tel" id="phone" placeholder="20 102 345 6789" />
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="20 102 345 6789"
+                  />
 
                   <label for="message">Message</label>
                   <textarea
@@ -498,7 +513,7 @@
                     placeholder="Your Message"
                   ></textarea>
                   <div class="button">
-                    <button type="submit">Send Message</button>
+                    <button type="submit" name="submit">Send Message</button>
                   </div>
                 </form>
               </div>
