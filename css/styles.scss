@@ -526,6 +526,11 @@ body {
 
       a {
         color: $secondaryColor;
+        transition: 0.3s;
+
+        &:hover {
+          color: #45505bb0;
+        }
       }
     }
   }

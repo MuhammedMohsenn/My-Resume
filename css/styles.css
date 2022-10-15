@@ -462,6 +462,10 @@ body {
 }
 .certifications-section .info h4 a {
   color: #45505b;
+  transition: 0.3s;
+}
+.certifications-section .info h4 a:hover {
+  color: rgba(69, 80, 91, 0.6901960784);
 }
 
 @media (max-width: 576px) {
