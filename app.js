@@ -76,7 +76,10 @@ window.addEventListener("scroll", () => {
 });
 
 scrlToTopBtn.addEventListener("click", () => {
-  window.scroll(0, 0);
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
+  });
 });
 
 window.addEventListener("load", () => {
