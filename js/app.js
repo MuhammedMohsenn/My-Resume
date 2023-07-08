@@ -17,16 +17,16 @@ navLiA.forEach((li) => {
 // mobile-nav-button
 
 // animating hero section text
-let typed = new Typed(".auto-type", {
-  strings: [
-    "Front-End Web Developer",
-    "React Developer",
-    "Open for job Opportunities",
-  ],
-  typeSpeed: 130,
-  backSpeed: 50,
-  loop: true,
-});
+// let typed = new Typed(".auto-type", {
+//   strings: [
+//     "Front-End Web Developer",
+//     "React Developer",
+//     "Open for job Opportunities",
+//   ],
+//   typeSpeed: 130,
+//   backSpeed: 50,
+//   loop: true,
+// });
 
 // adding active class on nav items on click
 let ulItems = document.querySelectorAll(".nav-ul li");
@@ -78,7 +78,7 @@ window.addEventListener("scroll", () => {
 scrlToTopBtn.addEventListener("click", () => {
   window.scroll({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 });
 
