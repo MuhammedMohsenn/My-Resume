@@ -426,8 +426,11 @@ body {
   .portfolio-wrap {
     position: relative;
     padding: 3px;
-    background-color: #45505b4f;
-    margin-bottom: 20px;
+    margin: 12px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 7px 0px #0d6efdba;
+    transition: all 0.3s;
+    // background-color: #45505b4f;
 
     &::before {
       content: "";
@@ -444,6 +447,12 @@ body {
       -moz-transition: all ease-in-out 0.3s;
       -ms-transition: all ease-in-out 0.3s;
       -o-transition: all ease-in-out 0.3s;
+    }
+
+    &:hover {
+      // box-shadow: 1px 1px 45px 0px #0d6efdba;
+      box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.59);
+      transform: scale(1.1);
     }
   }
 
@@ -499,16 +508,23 @@ body {
     // height: 580px;
     background-color: white;
     padding: 10px;
-    margin: 15px 0;
+    margin: 21px 15px;
     text-align: center;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    transition: all 0.3s;
+    border-radius: 8px;
+    -webkit-border-radius:  8px;
+    -moz-border-radius:  8px;
+    -ms-border-radius:  8px;
+    -o-border-radius:  8px;
 
     &:hover {
-      box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 5%);
+      box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 59%);
+      scale: 1.1;
+      .info h4 a {
+        // box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.59);
+        color: $mainColor;
+        border-radius: 20px;
+      }
     }
   }
 
@@ -545,9 +561,9 @@ body {
         color: $secondaryColor;
         transition: 0.3s;
 
-        &:hover {
-          color: #45505bb0;
-        }
+        // &:hover {
+        //   color: #45505bb0;
+        // }
       }
     }
   }
