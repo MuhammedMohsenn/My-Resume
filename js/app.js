@@ -90,49 +90,49 @@ window.addEventListener("load", () => {
 //Adding Animation to sections
 
 //About Section
-let aboutSection = document.getElementById('about');
+let aboutSection = document.getElementById("about");
 
 window.addEventListener("scroll", () => {
   if (pageYOffset >= 250) {
-    aboutSection.classList.add('animate__animated', 'animate__fadeInRight');
+    aboutSection.classList.add("animate__animated", "animate__fadeInRight");
   }
 });
 
 //Skills Section
-let skillsSection = document.getElementById('skills');
-let spans = document.querySelectorAll('.width-span');
+let skillsSection = document.getElementById("skills");
+let spans = document.querySelectorAll(".width-span");
 
 window.onscroll = function () {
   if (window.scrollY >= skillsSection.offsetTop - 500) {
-    spans.forEach((span)=>{
+    spans.forEach((span) => {
       span.style.width = span.dataset.width;
-    })
+    });
   }
 };
 
-//Resume Section 
-let resumeSection = document.getElementById('resume');
+//Resume Section
+let resumeSection = document.getElementById("resume");
 
 window.addEventListener("scroll", () => {
   if (pageYOffset >= 1550) {
-    resumeSection.classList.add('animate__animated', 'animate__fadeInLeft');
+    resumeSection.classList.add("animate__animated", "animate__fadeInLeft");
   }
 });
 
-//Portfolio Section 
-let portfolioSection = document.getElementById('portfolio');
+//Portfolio Section
+let portfolioSection = document.getElementById("portfolio");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= resumeSection.offsetTop + 950) {
-    portfolioSection.classList.add('animate__animated', 'animate__fadeInUpBig');
+    portfolioSection.classList.add("animate__animated", "animate__fadeInUpBig");
   }
 });
 
 //certifications Section
-let certificationsSection = document.getElementById('certifications');
+let certificationsSection = document.getElementById("certifications");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= certificationsSection.offsetTop - 700) {
-    certificationsSection.classList.add('animate__animated', 'animate__pulse');
+    certificationsSection.classList.add("animate__animated", "animate__pulse");
   }
 });

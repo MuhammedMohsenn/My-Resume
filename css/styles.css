@@ -378,6 +378,7 @@ body {
   margin: 12px;
   border-radius: 8px;
   box-shadow: 1px 1px 7px 0px rgba(13, 110, 253, 0.7294117647);
+  overflow: hidden;
   transition: all 0.3s;
 }
 .portfolio-section .portfolio-wrap::before {
@@ -400,30 +401,48 @@ body {
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.59);
   transform: scale(1.1);
 }
+.portfolio-section .portfolio-wrap:hover .portfolio-info {
+  visibility: visible;
+  opacity: 1;
+}
 .portfolio-section .portfolio-info {
-  position: relative;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
   z-index: 3;
-  color: #000;
+  color: white;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background-color: white;
-  border-top: 3px solid rgba(69, 80, 91, 0.3098039216);
+  background-color: rgba(0, 0, 0, 0.76);
 }
 .portfolio-section .portfolio-info p {
-  height: 70px;
+  font-size: 0.85rem;
 }
-.portfolio-section .portfolio-info h4 {
-  font-size: 2rem;
-  padding-bottom: 15px;
+.portfolio-section .portfolio-info a {
+  font-weight: 400;
+  border-radius: 20px;
+}
+.portfolio-section .portfolio-info a:hover {
+  color: #0563bb;
+  background-color: white;
+}
+.portfolio-section .portfolio-info a i {
+  padding-left: 5px;
+  font-size: 12px;
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-  .portfolio-info p {
-    font-size: 14px;
+@media (max-width: 1200px) {
+  .portfolio-section .portfolio-info p {
+    font-size: 0.75rem;
   }
 }
 .certifications-section {
