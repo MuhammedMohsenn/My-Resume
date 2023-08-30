@@ -1,6 +1,7 @@
 //Global styles
 $mainColor: #0563bb;
 $secondaryColor: #45505b;
+$mainHeaderColor: #141c3a;
 
 html {
   scroll-behavior: smooth;
@@ -201,44 +202,21 @@ body {
 // Hero Section
 
 .hero-section {
-  background-image: url("../assets/imgs/ben-kolde-bs2Ba7t69mM-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  text-align: center;
   min-height: 100vh;
-  position: relative;
 
-  &::before {
-    content: "";
-    background-color: #fff;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.4;
-  }
-
-  .row {
-    position: relative;
-  }
-  .col {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 140px;
-    left: 100px;
-
+  .hero-section-info {
     h1 {
-      color: $secondaryColor;
+      color: $mainHeaderColor;
       font-size: 64px;
       font-weight: 700;
       line-height: 56px;
       margin: 0;
+      padding-top: 100px;
     }
 
     p {
-      color: $secondaryColor;
+      color: $mainHeaderColor;
       margin: 15px 0 10px 0;
       font-size: 26px;
 
@@ -249,37 +227,74 @@ body {
 
     ul.social-icons {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       padding: 0 !important;
 
       .cv-btn {
-        background-color: #45505b;
+        background-color: $mainHeaderColor;
         padding: 0 5px;
         color: white !important;
         border-radius: 5px;
 
         &:hover {
-          background-color: $mainColor;
+          background-color: #141c3ad9;
         }
       }
 
       li {
         margin-right: 20px;
+        transition: all 0.3s;
 
-        &:hover {
-          color: $mainColor;
-        }
+        // &:hover {
+        //   color: $mainColor;
+        // }
 
         i {
           font-size: 25px;
-          color: $secondaryColor;
+          color: $mainHeaderColor;
           &:hover {
-            color: $mainColor;
+            color: #141c3ad9;
           }
         }
       }
     }
+    .avatar-wraper {
+      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .personal-avatar {
+        height: 455px;
+        width: 395px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .pc-mobile-avatar {
+        margin-top: 160px;
+        margin-bottom: 20px;
+        position: relative;
+        animation-name: up-and-down;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}
+
+@keyframes up-and-down {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 100px;
+  }
+  100% {
+    top: 0px;
   }
 }
 
@@ -295,31 +310,28 @@ body {
   }
 }
 
-@media (max-width: 576px) {
-  .hero-section .col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 235px;
-    left: 0;
-  }
-}
 // About section
 .about-section {
   padding: 60px 0;
 
-  .img-container {
-    width: fit-content;
-    margin: 0 auto;
-  }
+  // .img-container {
+  //   width: fit-content;
+  //   margin: 0 auto;
+
+  //   img {
+  //     height: 350px !important;
+  //     object-fit: cover;
+  //   }
+  // }
 
   h3 {
     font-weight: 700;
     font-size: 26px;
-    color: #728394;
-    margin-top: 25px;
+    color: $mainHeaderColor;
+  }
+
+  ul li {
+    padding: 5px;
   }
 
   i {
@@ -425,12 +437,11 @@ body {
 
   .portfolio-wrap {
     position: relative;
-    padding: 3px;
     margin: 12px;
     border-radius: 8px;
     box-shadow: 1px 1px 7px 0px #0d6efdba;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all ease-in-out 0.3s;
 
     &::before {
       content: "";
@@ -474,7 +485,7 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.76);
@@ -501,6 +512,9 @@ body {
 
 @media (max-width: 1200px) {
   .portfolio-section .portfolio-info {
+    h5 {
+      font-size: 1rem;
+    }
     p {
       font-size: 0.75rem;
     }
