@@ -94,6 +94,8 @@ let aboutSection = document.getElementById("about");
 
 window.addEventListener("scroll", () => {
   if (pageYOffset >= 250) {
+    aboutSection.style.opacity = 1;
+    aboutSection.style.visibility = "visible";
     aboutSection.classList.add("animate__animated", "animate__fadeInRight");
   }
 });
@@ -104,6 +106,8 @@ let spans = document.querySelectorAll(".width-span");
 
 window.onscroll = function () {
   if (window.scrollY >= skillsSection.offsetTop - 500) {
+    skillsSection.style.opacity = 1;
+    skillsSection.style.visibility = "visible";
     spans.forEach((span) => {
       span.style.width = span.dataset.width;
     });
@@ -115,6 +119,8 @@ let resumeSection = document.getElementById("resume");
 
 window.addEventListener("scroll", () => {
   if (pageYOffset >= 1550) {
+    resumeSection.style.opacity = 1;
+    resumeSection.style.visibility = "visible";
     resumeSection.classList.add("animate__animated", "animate__fadeInLeft");
   }
 });
@@ -124,6 +130,8 @@ let portfolioSection = document.getElementById("portfolio");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= resumeSection.offsetTop + 950) {
+    portfolioSection.style.opacity = 1;
+    portfolioSection.style.visibility = "visible";
     portfolioSection.classList.add("animate__animated", "animate__fadeInUpBig");
   }
 });
@@ -133,6 +141,8 @@ let certificationsSection = document.getElementById("certifications");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= certificationsSection.offsetTop - 700) {
+    certificationsSection.style.opacity = 1;
+    certificationsSection.style.visibility = "visible";
     certificationsSection.classList.add("animate__animated", "animate__pulse");
   }
 });

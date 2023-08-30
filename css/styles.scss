@@ -246,10 +246,6 @@ body {
         margin-right: 20px;
         transition: all 0.3s;
 
-        // &:hover {
-        //   color: $mainColor;
-        // }
-
         i {
           font-size: 25px;
           color: $mainHeaderColor;
@@ -286,17 +282,17 @@ body {
   }
 }
 
-@keyframes up-and-down {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 100px;
-  }
-  100% {
-    top: 0px;
-  }
-}
+// @keyframes up-and-down {
+//   0% {
+//     top: 0;
+//   }
+//   50% {
+//     top: 100px;
+//   }
+//   100% {
+//     top: 0px;
+//   }
+// }
 
 @media (max-width: 992px) {
   .hero-section {
@@ -313,7 +309,8 @@ body {
 // About section
 .about-section {
   padding: 60px 0;
-
+  opacity: 0;
+  visibility: hidden;
   h3 {
     font-weight: 700;
     font-size: 26px;
@@ -332,6 +329,8 @@ body {
 // skills section
 .skills-section {
   padding: 60px 0;
+  opacity: 0;
+  visibility: hidden;
   .skills {
     flex: 1;
   }
@@ -372,6 +371,8 @@ body {
 // Resume section
 .resume-section {
   padding: 60px 0;
+  opacity: 0;
+  visibility: hidden;
   .resume-title {
     font-size: 26px;
     font-weight: 700;
@@ -419,7 +420,8 @@ body {
 // Start portfolio-section
 .portfolio-section {
   padding: 60px 0;
-
+  opacity: 0;
+  visibility: hidden;
   .row {
     position: relative;
     margin-top: 60px;
@@ -516,7 +518,8 @@ body {
 .certifications-section {
   padding: 60px 0;
   background-color: #eee;
-
+  opacity: 0;
+  visibility: hidden;
   .certification-item {
     background-color: white;
     padding: 10px;
