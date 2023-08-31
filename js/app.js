@@ -105,7 +105,7 @@ let skillsSection = document.getElementById("skills");
 let spans = document.querySelectorAll(".width-span");
 
 window.onscroll = function () {
-  if (window.scrollY >= skillsSection.offsetTop - 500) {
+  if (window.scrollY >= skillsSection.offsetTop - 700) {
     skillsSection.style.opacity = 1;
     skillsSection.style.visibility = "visible";
     spans.forEach((span) => {
@@ -118,7 +118,7 @@ window.onscroll = function () {
 let resumeSection = document.getElementById("resume");
 
 window.addEventListener("scroll", () => {
-  if (pageYOffset >= 1550) {
+  if (pageYOffset >= 1250) {
     resumeSection.style.opacity = 1;
     resumeSection.style.visibility = "visible";
     resumeSection.classList.add("animate__animated", "animate__fadeInLeft");
