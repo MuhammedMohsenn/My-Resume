@@ -202,13 +202,15 @@ body {
   align-items: center;
   padding: 0 !important;
 }
-.hero-section .hero-section-info ul.social-icons .cv-btn {
+.hero-section .hero-section-info ul.social-icons .cv-btn,
+.hero-section .hero-section-info ul.social-icons .new-portfolio-btn {
   background-color: #141c3a;
   padding: 0 5px;
   color: white !important;
   border-radius: 5px;
 }
-.hero-section .hero-section-info ul.social-icons .cv-btn:hover {
+.hero-section .hero-section-info ul.social-icons .cv-btn:hover,
+.hero-section .hero-section-info ul.social-icons .new-portfolio-btn:hover {
   background-color: rgba(20, 28, 58, 0.8509803922);
 }
 .hero-section .hero-section-info ul.social-icons li {

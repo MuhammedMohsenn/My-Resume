@@ -231,7 +231,8 @@ body {
       align-items: center;
       padding: 0 !important;
 
-      .cv-btn {
+      .cv-btn,
+      .new-portfolio-btn {
         background-color: $mainHeaderColor;
         padding: 0 5px;
         color: white !important;
